@@ -1,0 +1,38 @@
+<form bindsubmit="bindSubmit">
+  <view wx:if="{{!isAuth}}" class='unAuth'>
+    <!-- <text>请授权后进行操作</text> -->
+    <view class='userInfo'>
+      <image src='../../../images/system/user.png'></image>
+      <view>
+        <text>[等待授权]\n---准备为「<text style="font-weight:600;">{{cat? cat.name: text_cfg.app_name}}</text>」反馈信息</text>
+      </view>
+    </view>
+    <button class='long primary' bindtap='getUInfo'>点击授权</button>
+  </view>
+  <block wx:else>
+    <!-- <view>--已经授权--</view> -->
+    <view class='userInfo'>
+      <image src='{{user.userInfo.avatarUrl}}'></image>
+      <view>
+        <text>{{user.userInfo.nickName}}\n---正在为「<text style="font-weight:600;">{{cat? cat.name: text_cfg.app_name}}</text>」反馈信息</text>
+      </view>
+    </view>
+    <view class='inputColumns'>
+      <view>
+        <text class='inputTitle'>{{text_cfg.feedback_detail.feedback_title}}：</text>
+        <textarea class='feedbackColumn' placeholder="{{text_cfg.feedback_detail.feedback_tip}}" name='feedbackInfo' maxlength='{{maxlength}}' bindinput='bindInput' />
+        <text class='lengthTips'>{{text_cfg.feedback_detail.input_length_tip}}：{{length}}/{{maxlength}}</text>
+      </view>
+      <view style='margin-top:40rpx;'>
+        <text class="inputTitle">{{text_cfg.feedback_detail.contract_title}}：</text>
+        <input placeholder="{{text_cfg.feedback_detail.contract_tip}}" name='contactInfo' maxlength='30' />
+      </view>
+    </view>
+    <view class='submitButton'>
+      <button form-type='submit' bindtap="toSubmit">{{text_cfg.feedback_detail.submit_button}}</button>
+    </view>
+  </block>
+</form>
+<view class='footnote'>
+  <text>{{text_cfg.feedback_detail.submit_tip}}</text>
+</view>

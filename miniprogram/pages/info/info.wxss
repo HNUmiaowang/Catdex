@@ -1,0 +1,134 @@
+/* miniprogram/pages/info/info.wxss */
+page {
+  width: 750rpx;
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  background-color: var(--color-gray-light);
+}
+
+.mina-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40rpx 0 15rpx 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.buttons .button {
+  width: 330rpx;
+  height: 182rpx;
+  border-radius: 15rpx;
+  filter: drop-shadow(7rpx 7rpx 20rpx rgba(0, 0, 0, 0.06));
+  margin-top: 30rpx;
+}
+
+/* 下面是旧的 */
+
+.mina-info image {
+  width: 150rpx;
+  height: 150rpx;
+  filter: drop-shadow(0 0 10rpx rgb(160, 159, 159));
+}
+
+.mina-info .title {
+  font-size: 33rpx;
+  font-weight: 500;
+  margin-top: 20rpx;
+}
+
+.mina-info .dev {
+  font-size: 23rpx;
+  font-weight: 300;
+  margin-top: 5rpx;
+  text-align: center;
+}
+
+.block-name {
+  font-size:30rpx;
+  font-weight: 400;
+  margin-top: 35rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.friend-link-box{
+  background-color: white;
+  margin: 10rpx 6rpx 10rpx 6rpx;
+  padding: 15rpx 15rpx;
+  filter: drop-shadow(12rpx 12rpx 10rpx rgba(0, 0, 0, 0.06));
+  border-radius: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.option-box {
+  background-color: white;
+  margin: 10rpx 6rpx 10rpx 6rpx;
+  padding: 5rpx;
+  filter: drop-shadow(12rpx 12rpx 10rpx rgba(0, 0, 0, 0.06));
+  border-radius: 30rpx;
+}
+
+.friend-link {
+  margin: 28rpx 10rpx 20rpx 5rpx;
+  width: 148rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-link image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  margin-bottom: 15rpx;
+}
+
+.friend-link-text {
+  width: 100%;
+  font-size: 25rpx;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.option {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.option:before {
+  content: " ";
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  right: 30rpx;
+  height: 1px;
+  border-top: 1rpx solid var(--color-gray-light);
+  color: var(--color-gray-light);
+}
+
+.option:first-child:before {
+  display: none;
+}
+
+.option-text {
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.right-arrow image {
+  height: 20rpx;
+  width: 20rpx;
+}
