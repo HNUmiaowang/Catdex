@@ -8,7 +8,7 @@
 <view class='block'>
   <view class='title'>开源代码</view>
   <view class='desc'>
-    <text selectable='true'>小程序代码开源啦！配备部署教程及视频~\n{{github_link1}}</text>
+    <text selectable='true'>本程序基于中大猫谱开源代码并参考北大燕园猫速查手册进行一定的修改而成。\n配备部署教程及视频如下~\n{{github_link1}}</text>
     <button class="primaryW" bindtap='copyOpenSourceLink1'>点击复制到剪切板</button>
 
     <text selectable='true'>另附上北大燕园猫速查手册可供选择:\n{{github_link2}}</text>

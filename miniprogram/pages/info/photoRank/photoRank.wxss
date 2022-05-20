@@ -29,10 +29,6 @@
 .unAuth .title {
   font-size: 30rpx;
 }
-.unAuth .utitle {
-  font-size: 30rpx;
-  color: white;
-}
 .my-info image,
 .avatar image.avatar {
   width: 150rpx;
@@ -133,4 +129,5 @@ button {
   margin: 10rpx;
   border: 1rpx solid var(--color-gray-max);
   border-radius: 20rpx;
+  color: var(--color-white);
 }

@@ -1,22 +1,22 @@
-/**app.wxss**/
+/**app.wxss740608**/
 page {
-  /* 定义一些颜色变量 */
-  --color-primary: #94070a;
-  --color-primary-dark: #740608;
-
-  --color-white: #ffffff;
-  --color-white-dark: #fafafa;
-
-  --color-gray-light: #f7f7fa;
-  --color-gray: #dddddd;
-  --color-gray-dark: #bbbbbb;
-  --color-gray-max: #888;
-
-  --color-black-min:#414141;
-  --color-black-light: #222222;
-
-  --color-black-transparent: rgba(0,0,0,0.5);
-}
+    /* 定义一些颜色变量 */
+    --color-primary: #C70000;
+    --color-primary-dark: #94070a;
+  
+    --color-white: #ffffff;
+    --color-white-dark: #fafafa;
+  
+    --color-gray-light: #f7f7fa;
+    --color-gray: #dddddd;
+    --color-gray-dark: #bbbbbb;
+    --color-gray-max: #888;
+  
+    --color-black-min:#414141;
+    --color-black-light: #222222;
+  
+    --color-black-transparent: rgba(0,0,0,0.5);
+  }
 .container {
   display: flex;
   flex-direction: column;
@@ -37,8 +37,5 @@ page {
   text-align: center;
   font-size: 34rpx;
 }
-.submit {
-  justify-content: center;
-  color: white;
-}
+
 @import '/packages/weui/weui-wxss/dist/style/weui.wxss'

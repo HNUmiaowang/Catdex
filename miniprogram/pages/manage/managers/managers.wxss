@@ -11,16 +11,14 @@ button {
 }
 
 button.primary {
-  color: #ffffff;
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 button + button {
   margin-left: 10%;
   /* float: right; */
 }
-
-
 
 button.long {
   margin: 20rpx 0 0 0;
@@ -32,7 +30,7 @@ button.long {
   padding: 20rpx 35rpx;
   margin: 20rpx 20rpx 30rpx 20rpx;
   box-shadow: 0rpx 0rpx 10rpx var(--color-gray);
-  border-radius: 30rpx;
+  border-radius: 10rpx;
 }
 
 .search {
@@ -80,7 +78,7 @@ button.long {
   padding: 15rpx 10rpx;
   margin: 20rpx 20rpx 50rpx 20rpx;
   box-shadow: 0rpx 0rpx 10rpx var(--color-gray);
-  border-radius: 30rpx;
+  border-radius: 10rpx;
 }
 
 .user-box .info {

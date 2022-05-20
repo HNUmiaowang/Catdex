@@ -24,7 +24,7 @@
         <text>{{item.name}}</text>
 
         <view class='right-arrow' wx:if='{{item.active}}'>
-          <image mode='aspectFill' src="../../images/filter/right_y.png"></image> 
+          <image mode='aspectFill' src="../../images/filter/right.png"></image> 
         </view>
       </view>
     </scroll-view>

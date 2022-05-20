@@ -279,6 +279,12 @@ Page({
     });
   },
 
+  bindTapAdopt() {
+    wx.navigateTo({
+      url: '/pages/genealogy/adoptme/adoptme'
+    });
+  },
+
   bindAddPhoto() {
     wx.navigateTo({
       url: '/pages/genealogy/addPhoto/addPhoto?cat_id=' + this.data.cat._id,
@@ -546,5 +552,13 @@ Page({
       album_raw[current].like_count = like_count;
       this.updateAlbum();
     }
-  }
+  },
+
+  //弹出层
+  showPopup() {
+    this.setData({ show: true });
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
 })

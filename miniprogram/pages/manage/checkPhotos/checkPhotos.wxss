@@ -21,6 +21,7 @@ button {
 
 button.primary {
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 button + button {
@@ -31,7 +32,7 @@ button + button {
 button.long {
   margin: 20rpx 0 0 0;
   width: 100%;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .verify-box {

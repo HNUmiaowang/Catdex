@@ -13,8 +13,8 @@ button {
 
 button.primary {
   background-color: var(--color-primary);
+  color:var(--color-white);
   margin-top: 8rpx;
-  color:var(--color-white)
 }
 
 button + button {
@@ -25,13 +25,13 @@ button + button {
 button.long {
   margin: 0;
   width: 100%;
-  color:var(--color-white)
+  color:var(--color-white);
 }
 button.long1 {
-  margin: 0;
-  width: 100%;
-  color:black;
-}
+    margin: 0;
+    width: 100%;
+    color:black;
+  }
 
 .bottom-bar {
   position: fixed;
@@ -150,7 +150,7 @@ button.long1 {
 .bubble2 .floating .content {
   float: left;
   background: var(--color-primary);
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .bubble1 .floating .content::before {

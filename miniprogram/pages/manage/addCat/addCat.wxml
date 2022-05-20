@@ -30,7 +30,7 @@
   <input type='text' value='{{cat.mother}}' bindinput="inputText" data-key='mother'></input>
   <view class='label relation'>好友：</view>
   <input type='text' value='{{cat.relation}}' bindinput="inputText" data-key='relation'></input>
-  <view class='label relation'>孩子：</view>
+  <view class='label son'>孩子：</view>
   <input type='text' value='{{cat.son}}' bindinput="inputText" data-key='son'></input>
   <view class='label gender'>性别：</view>
   <picker mode="selector" range='{{pickers.gender}}' value='{{picker_selected.gender}}' bindchange='pickerChange' data-key='gender'>{{cat.gender == undefined? '请选择': cat.gender}}</picker>

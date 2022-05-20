@@ -5,8 +5,8 @@
   <view class='title'>{{text_cfg.reward.reward_tip_title}}</view>
   <view class='desc'>
     <text wx:if="{{canUpload}}">{{text_cfg.reward.reward_tip}}</text>
-    <!-- 只有当普通用户无法上传时，才会显示下面的提示 -->
-    <text wx:else>感谢您对本小程序的帮助与支持！\n喵(^･ｪ･^)</text>
+    <!-- 只有当普通用户无法上传时，才会显示下面的提示，正常不需要改这里 -->
+    <text wx:else>暂时无法打赏！感谢您对本小程序的帮助与支持！\n喵(^･ｪ･^)</text>
   </view>
   <view style='flex-basis:100%;'>
     <!-- 打开小程序 -->
@@ -15,7 +15,7 @@
     <view class="buttons">
       <!-- 打开赞赏码 -->
       <button class='primaryW' wx:if="{{canUpload}}" bindtap='openImg' style='flex-basis:100%;'>赞赏码</button>
-
+      
       <!-- 打开激励广告 -->
       <button wx:if="{{showAdBlock}}" class='primary' bindtap='openAd' style='flex-basis:100%;'>观看广告</button>
     </view>
@@ -25,7 +25,7 @@
 <view class='tip'>{{text_cfg.reward.reward_count_tip}}</view>
 
 <view class='block'>
-  <view class='title'>打赏/支出记录</view>
+  <view class='title'>打赏记录</view>
   <view class='desc' wx:for='{{reward}}' wx:key='mdate'>
     <view class='sub-title hl'>{{item.mdate}}{{text_cfg.reward.reward_title}}</view>
     <view class='sub-detail' wx:for='{{item.records}}' wx:for-item="record" wx:key="item"><text>- {{record}}</text></view>

@@ -2,14 +2,14 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init({
-  env: 'hnu-9gt60bjnd5676331'
+    env: 'hnu-9gt60bjnd5676331'
 })
 
 function deepcopy(origin) {
   // not for modifying.
   const copyKeys = ['area', 'campus', 'characteristics','missing',
-    'colour', 'father', 'gender', 'mother', 'son','name', 'nickname', 'popularity', 'sterilized', 'adopt',
-    'birthday', 'habit', 'tutorial', 'relation', 'to_star']
+    'colour', 'father', 'gender', 'mother', 'name', 'nickname', 'popularity', 'sterilized', 'adopt',
+    'birthday', 'habit', 'tutorial', 'son','relation', 'to_star']
   var res = {};
   for (const key of copyKeys) {
     res[key] = origin[key];

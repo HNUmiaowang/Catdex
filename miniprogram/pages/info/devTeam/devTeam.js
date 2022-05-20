@@ -13,6 +13,26 @@ Page({
     github_link1: "https://github.com/sysucats/zhongdamaopu",
     github_link2:"https://github.com/SCCAPKU/miniprogram",
     update_log: [{
+        version: "v1.3.5",
+        content: [
+          "可在猫咪详情页提交领养申请",
+          "可通过联系客服的方式进行领养交流",
+        ],
+        time: "2021/05/21"
+      }, {
+      version: "v1.3.4",
+      content: [
+        "修复拍照月榜信息获取问题",
+        "猫咪详情页操作调整",
+      ],
+      time: "2021/05/19"
+    }, {
+      version: "v1.3.3",
+      content: [
+        "部署、管理流程优化",
+      ],
+      time: "2021/05/15"
+    }, {
         version: "v1.3.2",
         content: [
           "猫猫详情页可以给照片点赞了",

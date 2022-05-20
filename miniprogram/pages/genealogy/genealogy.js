@@ -310,7 +310,7 @@ Page({
         res.data = shuffle(res.data);
         for (var d of res.data) {
           d.photo = default_png;
-          d.characteristics_string = [(d.colour || '') + '猫'].concat(d.characteristics || []).join('，');
+          d.characteristics_string = [(d.colour || '') + ''].concat(d.characteristics || []).join('，');
           if (!d.mphoto) {
             d.mphoto_new = false;
           } else {
@@ -738,7 +738,7 @@ Page({
 
     const target_status = config.cat_status_adopt_target;
     const category = filters[filters_sub].category[0];
-    const index = category.items.findIndex((x) => {return x.name === target_status}); // 急需领养
+    const index = category.items.findIndex((x) => {return x.name === target_status}); // 寻找领养中
 
     if (category.items[index].active) {
       // 已经激活了

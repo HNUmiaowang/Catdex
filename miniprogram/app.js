@@ -9,8 +9,8 @@ App({
     } else {
       try {
         wx.cloud.init({
-          env: 'hnu-9gt60bjnd5676331',
-          traceUser: true,
+            env: 'hnu-9gt60bjnd5676331',
+            traceUser: true,
         });
       } catch (error) {
         console.error(error);
@@ -21,7 +21,7 @@ App({
     checkUpdateVersion();
 
     this.globalData = {
-      version: "v1.3.2"
+      version: "v1.3.5"
     }
   }
 })

@@ -35,9 +35,9 @@ module.exports = {
     verify: {
       id: 'Uu4hI8vnClz_S7Ik07yd0kTsjCu53J3QZbTDW8Z67nM',
       map: {
-        title: "thing2", // 标题
-        content: "thing7", // 内容
-        note: "thing17", // 备注
+        title: "thing17", // 标题
+        content: "thing2", // 内容
+        note: "thing7", // 备注
       }
     },
     // 提醒审核模版
@@ -73,6 +73,8 @@ module.exports = {
   text: {
     // 小程序名
     app_name: "HNU喵汪图鉴",
+    // 领养提示
+    adoption: "领养猫咪",
     // 首页，pages/genealogy/genealogy
     genealogy: {
       share_tip: "发现身边校园猫咪",
@@ -127,7 +129,7 @@ module.exports = {
     comment_board: {
       ban_tip: "如有误封请在\"关于-信息反馈\"中留言~",
       auth_tip: "授权后进行留言~",
-      comment_tip: "发条友善的留言吧~"
+      comment_tip: "发一条友善的留言吧~"
     },
     // 添加照片，pages/genealogy/addPhoto/addPhoto
     add_photo: {
@@ -181,12 +183,26 @@ module.exports = {
       no_cat_rec_tip: "看起来，整张照片更像...",
       single_cat_rec_tip: "看起来，这张照片里的猫猫更像...",
       multi_cat_rec_tip: "看起来，红色框框中的猫猫更像...",
-      bottom_tip: "*目前仅拥有十张以上靓照（清晰正面、仅含一只）的猫猫才能被认到哦！多多上传帮忙改进识别效果吧~",
+      bottom_tip: "*目前仅拥有十张以上靓照（清晰正面、仅含一只）的猫猫才能被认到哦！多多上传照片帮忙改进识别效果吧~",
       ad_tip: "识别累了，帮忙点下广告喵（揉眼睛 ( '-ωก̀ )",
     },
     // 科普页，pages/science/science
     science: {
       share_tip: "科普",
-    }
+    },
+    // 领养页，pages/genealogy/adopt/adopt
+    adopt: {
+        share_tip: "领养猫咪",
+        adopt_tip_title: "领养咨询",
+        adopt_tip: "有意领养猫咪者可填写以下内容后点击提交申请，通过申请后，我们会主动联系你进一步询问相关信息~\n或点击下方按钮直接与我们的客服联系",
+        requirement_title: "领养须知",
+        requirement_tip: "我们希望您具备以下基本条件：\n①有独立居住场所及经济条件；\n②有足够爱心、耐心、责任心；\n③希望能够积极交流，有效沟通；\n④参与领养审核、签订领养协议、领养后回访",
+        further_tip:"*详细条件请等我们进行联系后告知",
+        apply_title:"备注内容",
+        apply_tip:"想要领养猫咪的名字、您的大致位置、家中是否有原住民等基本情况~",
+        contract_tip:"（必填）微信/QQ/邮箱/电话等~",
+        submit_button:"提交申请",
+        submit_tip:"*提交内容仅后台工作人员可见"
+      },
   }
 }

@@ -2,9 +2,9 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init({
-  env: 'hnu-9gt60bjnd5676331'
-})
-
+    env: 'hnu-9gt60bjnd5676331'
+  })
+  
 // 云函数入口函数
 exports.main = async (event, context) => {
   if (event.deploy_test === true) {

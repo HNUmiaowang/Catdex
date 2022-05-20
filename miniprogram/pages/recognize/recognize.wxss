@@ -20,7 +20,7 @@ page {
   width: 675rpx;
   background-color: white;
   box-shadow: 13rpx 13rpx 30rpx var(--color-gray);
-  border-radius: 30rpx;
+  border-radius: 15rpx;
   overflow: hidden;
   box-sizing: border-box;
   margin-bottom: 50rpx;
@@ -52,7 +52,7 @@ page {
   background-color: var(--color-primary);
   border-radius: 20rpx;
   font-size: 30rpx;
-  color:white;
+  color: var(--color-white);
 }
 
 #cameraPreview, #photoPreview {
@@ -270,8 +270,8 @@ page {
   line-height: 30rpx;
   text-align: center;
   background-color: var(--color-primary);
-  color: white;
   margin-left: 8rpx;
+  color: var(--color-white);
 }
 
 .catCard .info .to_star {
@@ -280,7 +280,7 @@ page {
   font-size: 18rpx;
   line-height: 30rpx;
   text-align: center;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-gray-max);
   padding: 0 10rpx;
   margin: 0 10rpx;
 }

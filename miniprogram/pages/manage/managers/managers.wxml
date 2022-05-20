@@ -34,7 +34,7 @@
               <picker mode="selector" range="{{manager_types}}" class="manager-level" name="level" value="{{item.manager == 99? (manager_types.length-1) : (item.manager || 0)}}" bindchange="changePickerValue" data-index="{{index}}">
                 {{manager_types[item.manager == 99? (manager_types.length-1) : (item.manager || 0)]}}
               </picker>
-          <button class="submit" form-type="submit" class="manager-update primary">更新等级</button>
+          <button form-type="submit" class="manager-update primary">更新等级</button>
 
           <view class="index">#{{index}}</view>
         </view>

@@ -1,0 +1,61 @@
+<form bindsubmit="bindSubmit">
+  <view wx:if="{{!isAuth}}" class='unAuth'>
+    <!-- <text>请授权后进行操作</text> -->
+    <view class='userInfo'>
+      <image src='../../../images/system/user.png'></image>
+      <view>
+        <text>[等待授权]\n---准备为「<text style="font-weight:600;">{{cat? cat.name: text_cfg.adoption}}</text>」提交申请</text>
+      </view>
+    </view>
+    <button class='long primary' bindtap='getUInfo'>点击授权</button>
+  </view>
+  <block wx:else>
+    <!-- <view>--此处需修复获取不了猫咪名字bug--</view> -->
+    <!-- <view>--已经授权--</view> -->
+    <view class='userInfo'>
+      <image src='{{user.userInfo.avatarUrl}}'></image>
+      <view>
+        <text>{{user.userInfo.nickName}}\n---正在为「<text style="font-weight:600;">{{cat? cat.name: text_cfg.adoption}}</text>」提交申请</text>
+      </view>
+    </view>
+    
+    <!--须知-->
+    <view class='block'>
+        <view class='title'>{{text_cfg.adopt.adopt_tip_title}}</view>
+        <view class='desc'>
+         <text>{{text_cfg.adopt.adopt_tip}}</text>
+        </view>
+        <button class="primaryW" open-type="contact">联系客服</button>
+    </view>
+
+    <view class='block'>
+        <view class='title'>{{text_cfg.adopt.requirement_title}}</view>
+        <view class='desc'>
+            <text>{{text_cfg.adopt.requirement_tip}}</text>
+        </view>
+    </view>
+    <view class='tip'>{{text_cfg.adopt.further_tip}}</view>
+<!--须知结束-->
+
+    <view class='inputColumns'>
+      <view>
+        <text class='inputTitle'>{{text_cfg.adopt.apply_title}}：</text>
+        <textarea class='feedbackColumn' placeholder="{{text_cfg.adopt.apply_tip}}" name='feedbackInfo' maxlength='{{maxlength}}' bindinput='bindInput' />
+        <text class='lengthTips'>{{text_cfg.feedback_detail.input_length_tip}}：{{length}}/{{maxlength}}</text>
+      </view>
+      <view style='margin-top:40rpx;'>
+        <text class="inputTitle">{{text_cfg.feedback_detail.contract_title}}：</text>
+        <input placeholder="{{text_cfg.adopt.contract_tip}}" name='contactInfo' maxlength='30' />
+      </view>
+    </view>
+    <view class='submitButton'>
+      <button form-type='submit' bindtap="toSubmit">{{text_cfg.adopt.submit_button}}</button>
+    </view>
+  </block>
+
+  <view class='footnote'>
+     <text>{{text_cfg.adopt.submit_tip}}</text>
+  </view>
+</form>
+
+

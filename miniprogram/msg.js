@@ -42,7 +42,7 @@ async function requestNotice(template) {
     console.log("request SubMsg error:", error)
     await wx.showModal({
       title: '提示',
-      content: '订阅消息出错（错误代码：' + error.errCode + '）\n请尝试通过 “关于页”-“信息反馈”内的邮箱 或 “HNU喵汪”公众号留言联系我们，感谢反馈！',
+      content: '订阅消息出错（错误代码：' + error.errCode + '）\n请尝试通过 “关于页”-“信息反馈”内的邮箱 或关注 “HNU喵汪”公众号留言联系我们，感谢反馈！',
       showCancel: false,
     });
     return false;

@@ -14,7 +14,8 @@
 indicator-dots='{{false}}'
 bindchange='swiperLast'
 previous-margin='60rpx'
-next-margin='60rpx'>
+next-margin='60rpx'
+circular="true">
   <swiper-item class="best-photo" wx:for='{{cat.photo}}' wx:key="_id" bindtap='bindTapPhoto' data-index="{{item.index}}" data-kind='best'>
     <image bindload='bindImageLoaded' mode='aspectFill' src='{{item.photo_compressed || item.photo_id}}'></image>
     <item class="like-count" wx:if="{{item.like_count}}">
@@ -23,6 +24,7 @@ next-margin='60rpx'>
     </item>
   </swiper-item>
 </swiper>
+
 
 <view class='info' id='info-box'>
   <view class="identity">
@@ -126,20 +128,7 @@ next-margin='60rpx'>
 </view>
 <!-- info end -->
 
-<!--<view class='swipertab'>
-      <view class="tabitem {{currentab==0 ? 'active' : ''}}" data-current="0" bindtap='album'>相册</view>
-      <view class="tabitem {{currentab==1 ? 'active' : ''}}" data-current="1" bindtap='comments'>留言</view>
-    </view>
-
- <view class="album" wx:if="{{page == 1}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" animation="{{ani1}}">
-我是第一个页面
-  </view>
-
- <view class="comments" wx:if="{{page == 2}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" animation="{{ani2}}">
-我是第二个页面
-  </view>-->
-
-  <view class='big-header'>
+<view class='big-header'>
   <image class='avatar' mode='aspectFill' src='{{cat.photo[0].photo_compressed || cat.photo[0].photo_id}}'></image>
   <view class='name-and-count'>
     <view class='name'>{{cat.name}}的相册</view>
@@ -196,15 +185,44 @@ next-margin='60rpx'>
 </view>
 <!-- album end -->
 
-<view class="addPhoto" bindtap='bindAddPhoto'>
-<image class="icon" wx:if="{{canUpload}}" src='../../../images/button/addPhoto.png'></image>
+<view class="plus" bindtap='showPopup'>
+<image class="icon" wx:if="{{canUpload}}" src='../../../images/button/plus.png'></image>
 </view>
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: auto"
+  bind:close="onClose"
+  close-icon="arrow-down">
+    <view class="withdrawbtn" bindtap="onClose">
+        <image class="withdraw" src="../../../images/button/withdraw.png"></image>
+    </view>
+    <view class="buttons"> 
+        <view class="button" bindtap='bindTapAdopt' wx:if='{{cat.adopt == 2}}' >
+        <image class="icon" src='../../../images/button/adopt.png'></image>
+        <view class="button-text">领养猫咪</view>
+        </view>
+        <view class="button" bindtap='toComment' wx:if="{{canUpload}}" >
+        <image class="icon" src='../../../images/button/comment.png'></image>
+        <view class="button-text">留言评论</view>
+        </view>
+        <view class="button" bindtap='bindAddPhoto' wx:if="{{canUpload}}" >
+        <image class="icon" src='../../../images/button/addPhoto.png'></image>
+        <view class="button-text">上传喵照</view>
+        </view>
+        <!--<view class="button" >
+        <image class="icon" src='../../../images/button/share.png'></image>
+        <view class="button-text">分享</view>
+        </view>-->
+    </view>
+</van-popup>
 
 <!-- 进入留言板 -->
-<view id="comment-btn" bindtap="toComment">
+<!--<view id="comment-btn" bindtap="toComment" wx:if="{{canUpload}}">
   <text>{{text_cfg.detail_cat.label_comment_board}}</text>
   <image src="../../../images/button/right_double_arrow.png" mode="aspectFit"></image>
-</view>
+</view>-->
 </scroll-view>
 
 <mp-gallery show="{{showGallery}}" gallery-photos="{{galleryPhotos}}"

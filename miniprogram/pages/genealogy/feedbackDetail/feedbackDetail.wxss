@@ -26,11 +26,11 @@ page {
 button.long {
   /* width: 690rpx; */
   width: 100%;
-  color: white;
 }
 
 button.primary {
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 input, picker, textarea {
@@ -53,6 +53,7 @@ input, picker, textarea {
 
 button {
   background-color: var(--color-primary);
+  color: var(--color-white);
   width: 100%;
   display: inline-block;
   box-sizing: border-box;
