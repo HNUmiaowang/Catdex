@@ -57,7 +57,7 @@
                 <button bindtap="chooseImg">添加图片</button>
             </view>
 
-            <view class='label'>公告弹窗：设置公告弹窗将会在小程序首页弹出此公告</view>
+            <view class='label'>公告弹窗：将在小程序首页弹出此公告</view>
             <view class='button_container'>
                 <block wx:for="{{modalButtons}}" wx:key="modalButtons">
                     <button class='{{item.checked?"checked_button":"normal_button"}}' data-id='{{item.id}}' bindtap='radioModalButtonTap'>{{item.name}}</button>

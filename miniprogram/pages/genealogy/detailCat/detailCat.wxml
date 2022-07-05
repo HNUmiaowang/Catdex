@@ -73,7 +73,7 @@ circular="true">
         <view class='label-block'></view>
         {{text_cfg.detail_cat.label_birthday}}
       </view>
-      <view class='value'>{{cat.birthday || '-'}}</view>
+      <view class='value'>{{cat.birthday || text_cfg.detail_cat.label_birthday_empty}}</view>
     </view>
     <view class='item'>
       <view class='label'>
@@ -94,7 +94,7 @@ circular="true">
         <view class='label-block'></view>
         {{text_cfg.detail_cat.label_friend}}
       </view>
-      <view class='value'>{{cat.relation || '-'}}</view>
+      <view class='value'>{{cat.relation || text_cfg.detail_cat.label_friend_empty}}</view>
     </view>
     
     <view class='item long'wx:if='{{cat.son}}'>
@@ -212,6 +212,7 @@ circular="true">
         <view class="button-text">上传喵照</view>
         </view>
         <!--<view class="button" >
+        <painter customActionStyle="{{customActionStyle}}" palette="{{paintPallette}}" bind:imgOK="onImgOK" action="{{action}}"widthPixels="1000" />
         <image class="icon" src='../../../images/button/share.png'></image>
         <view class="button-text">分享</view>
         </view>-->

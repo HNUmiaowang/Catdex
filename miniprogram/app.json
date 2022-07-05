@@ -3,8 +3,6 @@
         "pages/genealogy/genealogy",
         "pages/genealogy/addPhoto/addPhoto",
         "pages/genealogy/detailCat/detailCat",
-        "pages/science/science",
-        "pages/science/sciDetail/sciDetail",
         "pages/info/info",
         "pages/info/photoRank/photoRank",
         "pages/info/reward/reward",
@@ -62,7 +60,7 @@
         ]
     },
     "window": {
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "#f7f7fa",
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#C70000",
         "navigationBarTitleText": "HNU喵汪图鉴",

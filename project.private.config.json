@@ -39,6 +39,13 @@
                     "query": "cat_id=859059a5618a307f04a331b813f79b23",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "照片审核",
+                    "pathName": "pages/manage/checkPhotos/checkPhotos",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

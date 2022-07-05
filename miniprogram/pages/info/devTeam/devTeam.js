@@ -13,12 +13,19 @@ Page({
     github_link1: "https://github.com/sysucats/zhongdamaopu",
     github_link2:"https://github.com/SCCAPKU/miniprogram",
     update_log: [{
-            version: "v1.4.0",
-            content: [
-              "每日喵闻上线啦",
-            ],
-            time: "2022/06/30"
-          },{
+      version: "v1.4.1",
+      content: [
+        "喵闻视觉UI优化",
+        "管理员审核照片更顺手啦",
+      ],
+      time: "2022/06/26"
+      },{
+        version: "v1.4.0",
+        content: [
+          "每日喵闻上线啦",
+         ],
+        time: "2022/06/22"
+      },{
         version: "v1.3.5",
         content: [
           "可在猫咪详情页提交领养申请",

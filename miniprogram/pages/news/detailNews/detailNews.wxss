@@ -14,13 +14,16 @@ button {
     display: inline-block;
     font-size: 30rpx;
     box-sizing: border-box;
-    
 }
 
 button+button {
     margin-left: 6%;
 }
 
+.modbtn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
 
 .news {
     font-weight: 300;

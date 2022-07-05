@@ -4,10 +4,8 @@ const config = require('../../config.js');
 
 
 const isManager = utils.isManager;
-const cates = ['猫咪救助', '撸猫指南', '猫咪领养', '猫咪喂养', '猫咪健康'];
 const text_cfg = config.text;
-const share_text = text_cfg.app_name + ' - ' + text_cfg.science.share_tip;
-
+const share_text = text_cfg.app_name + ' - ' + text_cfg.news.share_tip;
 
 Page({
     data: {
@@ -16,6 +14,7 @@ Page({
         updateRequest: false,
         showManager: false,
         no_scroll: true,
+        currentIndex: 0,
         buttons: [{
             id: -1,
             name: '全部',
@@ -69,6 +68,31 @@ Page({
      */
     onPullDownRefresh: function () {
         this.onRefresh();
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function () {
+        return {
+            title: share_text,
+          };
+    },
+
+    // 开始计算各个东西高度
+    getHeights() {
+        wx.getSystemInfo({
+            success: res => {
+             console.log(res);
+             this.setData({
+             "heights.sticky": res.screenHeight * 0.25,
+             "heights.screenHeight": res.screenHeight,
+             "heights.windowHeight": res.windowHeight,
+             "heights.statusBarHeight": res.statusBarHeight,
+             "heights.rpx2px": res.windowWidth / 750,
+            });
+            }
+        });
     },
 
     // 下拉刷新
@@ -246,12 +270,14 @@ Page({
           wx.pageScrollTo({
             scrollTop: 0
           })
-        } else {
+        } 
+        else {
           wx.showModal({
             title: '提示',
             content: '喵，返回不了了~'
           })
         }
+        this.fly();
     },
     onPageScroll: function (e) {
         if (e.scrollTop > 450) {
@@ -264,4 +290,41 @@ Page({
           });
         }
     },
+    
+    fly: function () {
+        if (!this.data.isPopping) {
+            //弹出
+            this.popp();
+            this.setData({
+                isPopping:true
+            })
+            }
+        else {
+            //bu
+            this.popp();
+            this.setData({
+                isPopping:false
+            })
+        }
+    },
+    //弹出动画
+    popp: function () {
+        //弹出
+        let animationfly = wx.createAnimation ({
+            duration: 600,
+            timingFunction: 'ease-in'
+        })
+        animationfly.translate (0,-550).opacity (0).scale (0.6).step();
+        this.setData({
+            animfly: animationfly.export(),
+        })
+        //回收（暂时解决）
+        var that = this;
+        setTimeout(function(){
+            animationfly.translate (0,0).opacity (1).scale (1).step();
+            that.setData({
+                animfly: animationfly.export(),
+            })
+        },600)
+    }
 })

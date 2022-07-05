@@ -4,11 +4,11 @@
 module.exports = {
   // 科普页图片
   science_imgs: [
-    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普1.png",
-    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普2.png",
-    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普3.png",
-    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普4.png",
-    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普5.png"
+    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普/救助.png",
+    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普/指南.png",
+    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普/领养.png",
+    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普/喂养.png",
+    "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/科普/健康.png"
   ],
   // 赞赏码图片
   reward_img: "cloud://hnu-9gt60bjnd5676331.686e-hnu-9gt60bjnd5676331-1308120594/系统/赞赏码.jpg",
@@ -82,7 +82,7 @@ module.exports = {
       share_tip: "发现校园猫咪",
       search_tip: "搜索猫猫名字或昵称",
       filter_tip: "点此进行筛选",
-      new_photo_tip: "有新相片！",
+      new_photo_tip: "有新相片 !",
       no_photo_tip: "暂无封面照片...",
       photo_by_tip: "Photo by ",
       photo_by_unknow_tip: "匿名猫友",
@@ -106,9 +106,11 @@ module.exports = {
       label_nickname: "昵称",
       label_location: "常驻地",
       label_birthday: "生日",
+      label_birthday_empty: "未知",
       label_father: "爸爸",
       label_mother: "妈妈",
       label_friend: "好友",
+      label_friend_empty: "人类",
       label_son:"孩子",
       label_character: "特点及性格",
       label_tutorial: "其他",
@@ -189,9 +191,13 @@ module.exports = {
       bottom_tip: "*目前仅拥有十张以上靓照（清晰正面、仅含一只）的猫猫才能被认到哦！多多上传照片帮忙改进识别效果吧~",
       ad_tip: "识别累了，帮忙点下广告喵（揉眼睛 ( '-ωก̀ )",
     },
-    // 科普页，pages/science/science
+    // 科普页，pages/news/sciDetail/sciDetail
     science: {
       share_tip: "科普",
+    },
+    // 公告页，pages/news/news
+    news:{
+      share_tip:"每日喵闻",
     },
     // 领养页，pages/genealogy/adopt/adopt
     adopt: {

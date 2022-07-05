@@ -298,7 +298,7 @@ swiper-item image {
     height: 100rpx;
     position: fixed;
     bottom: 4%;
-    right: 9%;
+    right: 6%;
     filter: drop-shadow(0px 12rpx 12rpx rgba(0, 0, 0, 0.15));
     display: block;
     justify-content: center;

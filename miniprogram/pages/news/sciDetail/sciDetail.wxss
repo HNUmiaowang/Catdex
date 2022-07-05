@@ -1,17 +1,17 @@
 /* miniprogram/pages/science/sciDetail/sciDetail.wxss */
 
 swiper {
-  width: 692rpx;
-  height: 261rpx;
+  width: 700rpx;
+  height: 280rpx;
   margin: 20rpx 29rpx;
-  border-radius: 15rpx;
+  border-radius: 30rpx;
   overflow: hidden;
 }
 
 swiper image {
-  width: 692rpx;
-  height: 261rpx;
-  border-radius: 15rpx;
+  width: 700rpx;
+  height: 280rpx;
+  border-radius: 30rpx;
 }
 
 /* 下面是qna环节 */
