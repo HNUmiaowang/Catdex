@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "mp-gallery": "/packages/weui/gallery/gallery"
+    "mp-gallery": "/packages/weui/gallery/gallery",
+    "painter":"../../../components/painter/painter"
   },
   "navigationBarTitleText": "猫猫详情",
   "disableScroll": true

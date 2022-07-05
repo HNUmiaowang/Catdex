@@ -4,13 +4,12 @@
     <view class='userInfo'>
       <image src='../../../images/system/user.png'></image>
       <view>
-        <text>[等待授权]\n---准备为「<text style="font-weight:600;">{{cat? cat.name: text_cfg.adoption}}</text>」提交申请</text>
+        <text>[等待授权]\n---准备为「<text style="font-weight:600;">{{cat? cat.name: text_cfg.adoption}}</text>」提交领养申请</text>
       </view>
     </view>
     <button class='long primary' bindtap='getUInfo'>点击授权</button>
   </view>
   <block wx:else>
-    <!-- <view>--此处需修复获取不了猫咪名字bug--</view> -->
     <!-- <view>--已经授权--</view> -->
     <view class='userInfo'>
       <image src='{{user.userInfo.avatarUrl}}'></image>

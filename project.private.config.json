@@ -1,20 +1,44 @@
 {
     "setting": {
-        "compileHotReLoad": false
+        "compileHotReLoad": true
     },
     "condition": {
         "miniprogram": {
             "list": [
                 {
-                    "name": "详情页",
-                    "pathName": "pages/genealogy/detailCat/detailCat",
+                    "name": "部署指引",
+                    "pathName": "pages/debug/deployTip/deployTip",
                     "query": "",
                     "launchMode": "default",
-                    "scene": null,
-                    "partialCompile": {
-                        "enabled": true,
-                        "pages": []
-                    }
+                    "scene": null
+                },
+                {
+                    "name": "创建公告",
+                    "pathName": "pages/news/createNews/createNews",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "喵闻",
+                    "pathName": "pages/news/news",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "修改公告",
+                    "pathName": "pages/news/modifyNews/modifyNews",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "猫猫详情",
+                    "pathName": "pages/genealogy/detailCat/detailCat",
+                    "query": "cat_id=859059a5618a307f04a331b813f79b23",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

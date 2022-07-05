@@ -281,6 +281,7 @@ page {
   line-height: 30rpx;
   text-align: center;
   background-color: var(--color-gray-max);
+  color: var(--color-white);
   padding: 0 10rpx;
   margin: 0 10rpx;
 }

@@ -281,7 +281,7 @@ Page({
 
   bindTapAdopt() {
     wx.navigateTo({
-      url: '/pages/genealogy/adoptme/adoptme'
+      url: '/pages/genealogy/adoptme/adoptme?cat_id=' + this.data.cat._id,
     });
   },
 

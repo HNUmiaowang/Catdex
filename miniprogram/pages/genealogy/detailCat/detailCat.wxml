@@ -112,7 +112,7 @@ circular="true">
       </view>
       <view class='value'>
         <!-- 新猫特点Char是空的数组（以前的是空值），修改判定方式 -->
-        <text>{{(cat.characteristics || '') + (cat.characteristics.length?'\n':'') + (cat.habit || '-')}}</text>
+        <text>{{(cat.characteristics || '') + (cat.characteristics.length?'\n':'') + (cat.habit || text_cfg.detail_cat.label_habit_empty)}}</text>
       </view>
     </view>
 

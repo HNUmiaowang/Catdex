@@ -25,12 +25,20 @@
 
 <block wx:if='{{showManager}}'><view class='block-name'>管理后台</view>
 <view class='option-box'>
+  <view class="option" bindtap='guide'>
+    <view class="option-text">管理员操作手册</view>
+    <view class="right-arrow"><image mode='aspectFill' src="../../images/filter/right.png"></image></view> 
+  </view>  
   <view class="option" bindtap='clickbtn' data-to='/pages/manage/checkPhotos/checkPhotos'>
     <view class="option-text">照片审核({{numChkPhotos}})</view>
     <view class="right-arrow"><image mode='aspectFill' src="../../images/filter/right.png"></image></view> 
   </view>
   <view class="option" bindtap='clickbtn' data-to='/pages/manage/checkFeedbacks/checkFeedbacks'>
     <view class="option-text">反馈处理({{numFeedbacks}})</view>
+    <view class="right-arrow"><image mode='aspectFill' src="../../images/filter/right.png"></image></view> 
+  </view>
+  <view class="option" bindtap='clickbtn' data-to='/pages/news/createNews/createNews'>
+    <view class="option-text">创建公告</view>
     <view class="right-arrow"><image mode='aspectFill' src="../../images/filter/right.png"></image></view> 
   </view>
   <view class="option" bindtap='clickbtn' data-to='/pages/manage/addCat/addCat'>

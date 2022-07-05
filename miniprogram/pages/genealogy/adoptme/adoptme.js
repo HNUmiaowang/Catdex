@@ -52,7 +52,7 @@ Page({
     const pagesStack = getCurrentPages();
     const path = getCurrentPath(pagesStack);
     
-    const share_text = `来给${this.data.cat.name}反馈信息 - ${text_cfg.app_name}`;
+    const share_text = `来给${this.data.cat.name}申请领养 - ${text_cfg.app_name}`;
     return shareTo(share_text, path);
   },
 
@@ -123,7 +123,7 @@ Page({
         })
         wx.hideLoading();
         wx.showToast({
-          title: '收到你的反馈啦',
+          title: '收到你的申请啦',
           icon: 'success',
           duration: 1000,
           success: () => {

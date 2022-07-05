@@ -297,8 +297,8 @@ swiper-item image {
     width: 100rpx;
     height: 100rpx;
     position: fixed;
-    bottom: 4.5%;
-    right: 8%;
+    bottom: 4%;
+    right: 9%;
     filter: drop-shadow(0px 12rpx 12rpx rgba(0, 0, 0, 0.15));
     display: block;
     justify-content: center;
@@ -317,7 +317,8 @@ swiper-item image {
   .withdraw{
     width: 72rpx;
     height: 19.5rpx;
-    margin-top: 50rpx;
+    margin-top: 60rpx;
+    margin-bottom: 40rpx;
   }
   
   .buttons {
@@ -327,7 +328,7 @@ swiper-item image {
   }
   .button {
       filter: drop-shadow(0px 12rpx 12rpx rgba(0, 0, 0, 0.15));
-      margin: 45rpx 0rpx 20rpx 112rpx;
+      margin: 0rpx 0rpx 50rpx 115rpx;
       display: flex;
       flex-direction: column;
       justify-content: center;

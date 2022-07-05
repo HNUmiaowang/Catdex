@@ -86,7 +86,7 @@ page {
   .card .info .line.first{
     display: flex;
     align-items: center;
-    margin-bottom: 30rpx;
+    margin-bottom: 25rpx;
     margin-left: 3rpx;
   }
   
@@ -143,7 +143,7 @@ page {
   }
   
   .card .info .comment {
-    margin-left: 10rpx;
+    margin-left: 15rpx;
     order: 2;
     display: flex;
     align-items: center;
@@ -154,11 +154,18 @@ page {
     margin-right: 8rpx;
   }
   
+  .card .line {
+    color: var(--color-black-light);
+    /* line-height: 1.05rem; */
+  }
+  
   .card .line image.icon {
     height: 26rpx;
     width: 26rpx;
     min-width: 26rpx;
     margin-right: 20rpx;
+
+    vertical-align: text-top;
   }
   
   .card .line .index {
@@ -167,11 +174,13 @@ page {
     color: var(--color-gray);
   }
   .card .line .characteristics{
-    line-height: 0.9rem;
+    line-height: 1.05rem;
+    vertical-align: text-top;
   }
   
   .card .line .habit{
-    line-height: 0.9rem;
+    line-height: 1.05rem;
+    vertical-align: text-top;
   }
   
   .loading image {

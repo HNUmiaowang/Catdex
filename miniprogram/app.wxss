@@ -3,11 +3,13 @@ page {
     /* 定义一些颜色变量 */
     --color-primary: #C70000;
     --color-primary-dark: #94070a;
+    --color-primary-light: #fdd5d5;
   
     --color-white: #ffffff;
     --color-white-dark: #fafafa;
   
     --color-gray-light: #f7f7fa;
+    --color-gray-normal:#eeeeee;
     --color-gray: #dddddd;
     --color-gray-dark: #bbbbbb;
     --color-gray-max: #888;
